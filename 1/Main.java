@@ -13,13 +13,8 @@ public class Main {
         }
         Arrays.sort(nums);
         int a = nums[0];
-        int[] newArray = Arrays.copyOf(nums, nums.length - 1);
-        int b = nums[0];
-        newArray = Arrays.copyOf(nums, nums.length - 1);
-        int c = newArray[newArray.length];
-        System.out.println(c);
-        c = c - a - b;
+        int b = nums[1];
+        int c = nums[4];
         System.out.println(a + " " + b + " " + c);
-
     }
 }
