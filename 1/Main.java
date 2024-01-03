@@ -1,4 +1,6 @@
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -14,6 +16,17 @@ public class Main {
             out.println(groupB);
         } else {
             System.out.println("Not enough lines in the file");
+        }
+
+        assert groupB != null;
+        List<Integer> groupBNum = new ArrayList<>();
+        for (char s : groupB.toCharArray()) {
+            groupBNum.add(getCharNumber(s));
+        }
+        List<Integer> groupANum = new ArrayList<>();
+        assert groupA != null;
+        for (char c : groupA.toCharArray()) {
+            groupANum.add(getCharNumber(c));
         }
 
         f.close();
