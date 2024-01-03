@@ -36,13 +36,23 @@ class Ride {
             resultB *= i;
         }
 
+        String resultAS = "";
+
         if (resultA % 47 == 27) {
-            out.println("GO");
+            resultAS = "GO";
         } else {
-            out.println("STAY");
+            resultAS = "STAY";
         }
 
+        String resultBS = "";
+
         if (resultB % 47 == 27) {
+            resultBS = "GO";
+        } else {
+            resultBS = "STAY";
+        }
+
+        if (resultBS.equals("GO") && resultAS.equals("GO")) {
             out.println("GO");
         } else {
             out.println("STAY");
