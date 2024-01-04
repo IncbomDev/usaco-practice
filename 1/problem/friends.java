@@ -36,6 +36,9 @@ public class friends {
             for (int j = 0; j <= friendsGiving; j++) {
                 int modAmount = moneyGiving % friendsGiving;
                 int newAmount = moneyGiving - modAmount;
+                int
+                addMoney(friendName, modAmount);
+
             }
             break;
 
