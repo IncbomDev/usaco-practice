@@ -1,3 +1,5 @@
+package problem;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -10,8 +12,8 @@ PROG: ride
 */
 class Ride {
     public static void main(String[] args) throws IOException {
-        BufferedReader f = new BufferedReader(new FileReader("./ride.in"));
-        PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("ride.out")));
+        BufferedReader f = new BufferedReader(new FileReader("problem/ride.in"));
+        PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("problem/ride.out")));
 
         String groupA = f.readLine();
         String groupB = f.readLine();
